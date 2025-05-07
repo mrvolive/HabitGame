@@ -7,23 +7,20 @@
 
 import Foundation
 
-enum Category: String, CaseIterable {
-    case all = "All"
-    case perso = "Perso"
-    case pro = "Pro"
-    case vacation = "Vacation"
-}
-
-struct ExpensesData {
-    var name: String = ""
-    var value: Double = 0.00
-    var Category: Category
-
-    static var expensesTest = [
-        ExpensesData(name:"Apple", value:120.00, Category: .perso),
-        ExpensesData(name:"Airbnb", value:1200.00, Category: .perso),
-        ExpensesData(name:"McDonald", value:300.00, Category: .vacation),
-        ExpensesData(name:"Bakery", value:10.00, Category: .perso),
-        ExpensesData(name:"Mechanic", value:1000.00, Category: .pro)
+struct HabitsData: Identifiable{
+    var id = UUID()
+    var name: String
+    var value: Int
+    
+    static var habitsTest = [
+        HabitsData(name: "Méditer 10 minutes", value: 120),
+        HabitsData(name: "Faire du sport", value: 200),
+        HabitsData(name: "Lire 30 minutes", value: 150),
+        HabitsData(name: "Boire 2L d'eau", value: 100),
+        HabitsData(name: "Manger 5 fruits et légumes", value: 180)
     ]
+    
+    static func == (lhs: HabitsData, rhs: HabitsData) -> Bool {
+        lhs.id == rhs.id
+    }
 }
