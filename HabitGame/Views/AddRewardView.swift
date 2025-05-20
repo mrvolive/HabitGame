@@ -82,12 +82,9 @@ struct AddRewardView: View {
 }
 
 /// Fournit un aperçu pour `AddRewardView` dans Xcode Previews.
-///
-/// Cette structure permet de visualiser et d'interagir avec `AddRewardView`
-/// pendant le développement, en lui injectant une instance de `AppData`.
 struct AddRewardView_Previews: PreviewProvider {
     static var previews: some View {
         AddRewardView()
-            .environmentObject(AppData()) // Injecte une instance d'AppData pour l'aperçu
+            .environmentObject(AppData()) 
     }
 }

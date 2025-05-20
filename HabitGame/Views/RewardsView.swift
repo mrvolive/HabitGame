@@ -113,21 +113,8 @@ struct RewardsView: View {
 }
 
 /// Fournit un aperçu pour `RewardsView` dans Xcode Previews.
-///
-/// Cette structure permet de visualiser et d'interagir avec `RewardsView`
-/// pendant le développement. Une instance de `AppData` (potentiellement avec des données
-/// de test pour les récompenses et les points) est injectée dans l'environnement
-/// pour que la vue d'aperçu puisse fonctionner et afficher des données pertinentes.
 struct RewardsView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleAppData = AppData()
-        // Décommentez et modifiez ces lignes pour pré-remplir des données pour l'aperçu :
-        // sampleAppData.rewards = [
-        //     Reward(id: UUID(), name: "Café offert", cost: 50),
-        //     Reward(id: UUID(), name: "Pause de 15 min", cost: 25),
-        //     Reward(id: UUID(), name: "Cinéma", cost: 200)
-        // ]
-        // sampleAppData.currentPoints = 100 // Simule un solde de points pour tester l'affichage des boutons "Acheter".
-        return RewardsView().environmentObject(sampleAppData)
+        return RewardsView().environmentObject(AppData())
     }
 }

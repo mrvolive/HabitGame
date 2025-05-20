@@ -85,14 +85,8 @@ struct AddHabitView: View {
 }
 
 /// Fournit un aperçu pour `AddHabitView` dans Xcode Previews.
-///
-/// Cette structure permet de visualiser et d'interagir avec `AddHabitView`
-/// pendant le développement. Une instance de `AppData` est injectée dans l'environnement
-/// pour que la vue d'aperçu puisse fonctionner correctement, car `AddHabitView`
-/// dépend de `@EnvironmentObject var appData: AppData`.
 struct AddHabitView_Previews: PreviewProvider {
     static var previews: some View {
-        // Fournir une instance d'AppData pour que la preview fonctionne.
         AddHabitView().environmentObject(AppData())
     }
 }

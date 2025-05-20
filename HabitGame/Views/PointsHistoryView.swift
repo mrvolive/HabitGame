@@ -147,15 +147,8 @@ struct PointsHistoryView: View {
 }
 
 /// Fournit un aperçu pour `PointsHistoryView` dans Xcode Previews.
-///
-/// Cette structure permet de visualiser et d'interagir avec `PointsHistoryView`
-/// pendant le développement. Une instance de `AppData` (potentiellement avec des données
-/// de test) est injectée dans l'environnement pour que la vue d'aperçu puisse
-/// afficher le graphique correctement.
 struct PointsHistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        // Injecte une instance d'AppData pour que l'aperçu puisse accéder à `pointHistory`.
-        // Pour un aperçu plus riche, vous pourriez initialiser AppData avec des exemples de DailyPoints.
         return PointsHistoryView().environmentObject(AppData())
     }
 }

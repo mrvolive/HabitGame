@@ -173,17 +173,11 @@ class AppData: ObservableObject {
     /// Si l'achat est possible, le coût de la récompense est déduit de ``currentPoints``.
     /// Un message est imprimé dans la console pour indiquer le succès ou l'échec de l'achat.
     ///
-    /// - Note: La récompense n'est actuellement pas retirée de la liste ``rewards`` après l'achat.
-    ///   Cela pourrait être une amélioration future (voir commentaire dans le code).
     /// - Parameter reward: L'instance de ``Reward`` que l'utilisateur souhaite acheter.
     func buyReward(reward: Reward) {
         if currentPoints >= reward.cost {
             currentPoints -= reward.cost
             print("\(reward.name) achetée !")
-            // Optionnel: supprimer la récompense après l'achat ou la marquer comme possédée
-            // if let index = rewards.firstIndex(where: { $0.id == reward.id }) {
-            //     rewards.remove(at: index)
-            // }
         } else {
             print("Points insuffisants pour acheter \(reward.name). Vous avez \(currentPoints) points, il en faut \(reward.cost).")
         }

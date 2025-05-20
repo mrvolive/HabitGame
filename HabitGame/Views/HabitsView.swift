@@ -147,25 +147,8 @@ struct HabitsView: View {
 }
 
 /// Fournit un aperçu pour `HabitsView` dans Xcode Previews.
-///
-/// Cette structure permet de visualiser et d'interagir avec `HabitsView`
-/// pendant le développement. Une instance de `AppData` est créée et peut être
-/// pré-remplie avec des données d'exemple (habitudes) pour simuler différents états
-/// de la vue et du graphique de complétion.
 struct HabitsView_Previews: PreviewProvider {
     static var previews: some View {
-        // Crée une instance d'AppData pour la prévisualisation.
-        let sampleAppData = AppData()
-        // Pré-remplir avec quelques habitudes pour un meilleur aperçu du graphique et de la liste.
-        // Assurez-vous que votre type Habit a un initialiseur qui correspond ou ajustez en conséquence.
-        // Si Habit est Identifiable par un `id` généré automatiquement, vous n'avez pas besoin de le spécifier ici.
-        sampleAppData.habits = [
-            Habit(name: "Faire du sport", points: 20, isCompletedToday: true),
-            Habit(name: "Lire un livre", points: 10, isCompletedToday: false),
-            Habit(name: "Méditer", points: 15, isCompletedToday: true),
-            Habit(name: "Boire de l'eau", points: 5, isCompletedToday: false)
-        ]
-        // Injecte l'instance d'AppData dans l'environnement de la vue d'aperçu.
-        return HabitsView().environmentObject(sampleAppData)
+        return HabitsView().environmentObject(AppData())
     }
 }
