@@ -7,24 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7512E8DF2DDCAB6C004C2AAE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8DE2DDCAB6C004C2AAE /* MainTabView.swift */; };
+		7512E8E12DDCABFB004C2AAE /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8E02DDCABFB004C2AAE /* HabitsView.swift */; };
+		7512E8E32DDCAC16004C2AAE /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8E22DDCAC16004C2AAE /* RewardsView.swift */; };
+		7512E8E52DDCAC2F004C2AAE /* PointsHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8E42DDCAC2F004C2AAE /* PointsHistoryView.swift */; };
+		7512E8E72DDCAE0C004C2AAE /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8E62DDCAE0C004C2AAE /* Habit.swift */; };
+		7512E8E92DDCAE14004C2AAE /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8E82DDCAE14004C2AAE /* Reward.swift */; };
+		7512E8EB2DDCAE1F004C2AAE /* DailyPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8EA2DDCAE1F004C2AAE /* DailyPoints.swift */; };
+		7512E8ED2DDCAF77004C2AAE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8EC2DDCAF77004C2AAE /* AppData.swift */; };
+		7512E8EF2DDCC08A004C2AAE /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8EE2DDCC08A004C2AAE /* AddHabitView.swift */; };
+		7512E8F12DDCC1BD004C2AAE /* CompletionCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8F02DDCC1BD004C2AAE /* CompletionCircleView.swift */; };
+		7512E8F32DDCC4B8004C2AAE /* AddRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512E8F22DDCC4B8004C2AAE /* AddRewardView.swift */; };
 		75FA7D912DCB5DD3006671AF /* HabitGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA7D902DCB5DD3006671AF /* HabitGameApp.swift */; };
-		75FA7D932DCB5DD3006671AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA7D922DCB5DD3006671AF /* ContentView.swift */; };
 		75FA7D952DCB5DD5006671AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FA7D942DCB5DD5006671AF /* Assets.xcassets */; };
 		75FA7D982DCB5DD5006671AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FA7D972DCB5DD5006671AF /* Preview Assets.xcassets */; };
-		75FA7DA12DCB60D9006671AF /* HabitGameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA7DA02DCB60D9006671AF /* HabitGameData.swift */; };
-		75FA7DA32DCB67BE006671AF /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA7DA22DCB67BE006671AF /* HabitListView.swift */; };
-		75FA7DA52DCB67F9006671AF /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA7DA42DCB67F9006671AF /* AddHabitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7512E8DE2DDCAB6C004C2AAE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		7512E8E02DDCABFB004C2AAE /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
+		7512E8E22DDCAC16004C2AAE /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		7512E8E42DDCAC2F004C2AAE /* PointsHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsHistoryView.swift; sourceTree = "<group>"; };
+		7512E8E62DDCAE0C004C2AAE /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		7512E8E82DDCAE14004C2AAE /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		7512E8EA2DDCAE1F004C2AAE /* DailyPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPoints.swift; sourceTree = "<group>"; };
+		7512E8EC2DDCAF77004C2AAE /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		7512E8EE2DDCC08A004C2AAE /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		7512E8F02DDCC1BD004C2AAE /* CompletionCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionCircleView.swift; sourceTree = "<group>"; };
+		7512E8F22DDCC4B8004C2AAE /* AddRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRewardView.swift; sourceTree = "<group>"; };
 		75FA7D8D2DCB5DD3006671AF /* HabitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FA7D902DCB5DD3006671AF /* HabitGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitGameApp.swift; sourceTree = "<group>"; };
-		75FA7D922DCB5DD3006671AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75FA7D942DCB5DD5006671AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75FA7D972DCB5DD5006671AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		75FA7DA02DCB60D9006671AF /* HabitGameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitGameData.swift; sourceTree = "<group>"; };
-		75FA7DA22DCB67BE006671AF /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
-		75FA7DA42DCB67F9006671AF /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 				75FA7D9F2DCB6078006671AF /* Views */,
 				75FA7D9E2DCB605C006671AF /* Models */,
 				75FA7D902DCB5DD3006671AF /* HabitGameApp.swift */,
+				7512E8EC2DDCAF77004C2AAE /* AppData.swift */,
 				75FA7D942DCB5DD5006671AF /* Assets.xcassets */,
 				75FA7D962DCB5DD5006671AF /* Preview Content */,
 			);
@@ -77,7 +92,9 @@
 		75FA7D9E2DCB605C006671AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				75FA7DA02DCB60D9006671AF /* HabitGameData.swift */,
+				7512E8E62DDCAE0C004C2AAE /* Habit.swift */,
+				7512E8E82DDCAE14004C2AAE /* Reward.swift */,
+				7512E8EA2DDCAE1F004C2AAE /* DailyPoints.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,9 +102,13 @@
 		75FA7D9F2DCB6078006671AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				75FA7D922DCB5DD3006671AF /* ContentView.swift */,
-				75FA7DA22DCB67BE006671AF /* HabitListView.swift */,
-				75FA7DA42DCB67F9006671AF /* AddHabitView.swift */,
+				7512E8DE2DDCAB6C004C2AAE /* MainTabView.swift */,
+				7512E8E02DDCABFB004C2AAE /* HabitsView.swift */,
+				7512E8E22DDCAC16004C2AAE /* RewardsView.swift */,
+				7512E8E42DDCAC2F004C2AAE /* PointsHistoryView.swift */,
+				7512E8EE2DDCC08A004C2AAE /* AddHabitView.swift */,
+				7512E8F02DDCC1BD004C2AAE /* CompletionCircleView.swift */,
+				7512E8F22DDCC4B8004C2AAE /* AddRewardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,11 +183,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FA7D932DCB5DD3006671AF /* ContentView.swift in Sources */,
-				75FA7DA32DCB67BE006671AF /* HabitListView.swift in Sources */,
+				7512E8F12DDCC1BD004C2AAE /* CompletionCircleView.swift in Sources */,
+				7512E8EB2DDCAE1F004C2AAE /* DailyPoints.swift in Sources */,
+				7512E8E72DDCAE0C004C2AAE /* Habit.swift in Sources */,
+				7512E8F32DDCC4B8004C2AAE /* AddRewardView.swift in Sources */,
 				75FA7D912DCB5DD3006671AF /* HabitGameApp.swift in Sources */,
-				75FA7DA12DCB60D9006671AF /* HabitGameData.swift in Sources */,
-				75FA7DA52DCB67F9006671AF /* AddHabitView.swift in Sources */,
+				7512E8E12DDCABFB004C2AAE /* HabitsView.swift in Sources */,
+				7512E8DF2DDCAB6C004C2AAE /* MainTabView.swift in Sources */,
+				7512E8E92DDCAE14004C2AAE /* Reward.swift in Sources */,
+				7512E8E52DDCAC2F004C2AAE /* PointsHistoryView.swift in Sources */,
+				7512E8E32DDCAC16004C2AAE /* RewardsView.swift in Sources */,
+				7512E8ED2DDCAF77004C2AAE /* AppData.swift in Sources */,
+				7512E8EF2DDCC08A004C2AAE /* AddHabitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
