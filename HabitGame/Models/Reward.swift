@@ -7,28 +7,35 @@
 
 import Foundation
 
-/// Représente une récompense que l'utilisateur peut débloquer ou acheter avec des points.
+/// Représente une récompense que l'utilisateur peut débloquer ou acheter en utilisant les points accumulés.
 ///
-/// Chaque récompense possède un identifiant unique, un nom descriptif et un coût en points.
-/// Cette structure est conçue pour être facilement identifiable, persistante et utilisable
-/// dans des collections.
+/// Chaque récompense est définie par un identifiant unique, un nom descriptif,
+/// et le coût en points nécessaire pour l'obtenir. Les récompenses servent à motiver
+/// l'utilisateur en lui offrant des objectifs tangibles à atteindre.
 ///
-/// Elle se conforme aux protocoles :
-/// - `Identifiable`: Permet d'identifier de manière unique chaque instance de récompense,
-///   utile par exemple dans les listes SwiftUI.
-/// - `Codable`: Permet d'encoder et de décoder la structure, facilitant la sauvegarde
-///   et le chargement des données (par exemple, en JSON).
-/// - `Hashable`: Permet d'utiliser les instances de `Reward` dans des collections
-///   qui nécessitent le hachage, comme les `Set` ou comme clés dans un `Dictionary`.
+/// ## Conformances
+/// - ``Identifiable``: Assure que chaque récompense peut être identifiée de manière unique,
+///   ce qui est crucial pour son utilisation dans des interfaces utilisateur dynamiques comme les listes SwiftUI.
+/// - ``Codable``: Permet à la structure d'être facilement encodée et décodée,
+///   par exemple pour la sauvegarde et la restauration à partir d'un format comme JSON.
+/// - ``Hashable``: Rend les instances de ``Reward`` utilisables dans des collections
+///   basées sur le hachage, telles que `Set` ou comme clés dans un `Dictionary`.
 struct Reward: Identifiable, Codable, Hashable {
-    /// Un identifiant unique pour la récompense, généré automatiquement.
+    /// Un identifiant unique et stable pour la récompense.
     ///
-    /// Conforme au protocole `Identifiable`.
+    /// Cet identifiant est généré automatiquement via `UUID()` lors de la création
+    /// d'une nouvelle instance de ``Reward`` et reste constant.
+    /// Il est requis par le protocole ``Identifiable``.
     var id = UUID()
 
-    /// Le nom de la récompense (par exemple, "Pause café prolongée", "Nouvel avatar").
+    /// Le nom descriptif de la récompense.
+    ///
+    /// Ce nom est affiché à l'utilisateur pour qu'il comprenne ce qu'il peut obtenir.
+    /// Exemples : `"Pause café prolongée de 15 minutes"`, `"Débloquer un nouvel avatar"`, `"Jour de congé virtuel"`.
     var name: String
 
-    /// Le coût en points nécessaire pour obtenir ou débloquer cette récompense.
+    /// Le coût en points nécessaire pour acquérir ou débloquer cette récompense.
+    ///
+    /// L'utilisateur doit accumuler au moins ce nombre de points pour pouvoir réclamer la récompense.
     var cost: Int
 }
